@@ -1,0 +1,9 @@
+<h2>Clock Readme</h2>
+
+The clock library is a software approach to tracking time which is geared towards eliminating the need for a real time clock to enable effective time tracking. The mechanism it uses to supply this functionality is the internal function millis, which reports the value from a clock that counts upthe number of milliseconds since the MCU started running.
+
+To prevent the need to have a regular function call or an interrupt routine that updates the clock, we instead have a function, updateClock, which looks at the time that has passed since a variable 'timer' was updated, and counts out the number of seconds that fits within that time frame. From there, it increments the seconds counter, then updates minutes and hours as per a standard clock. It then increases timer by 1000 ms per second it added.
+
+This function naturally will work with any delay between updates that is shorter than the overflow time of millis(), which is about 2 months. Additionally, to prevent the user from having to keep track of how recently they updated the clock when they pull the time, the update procedure is enacted each time the clock is accessed, meaning that you never need to independently run updateClock. Even for long-duration applications that may not have a pull made over a two month period, one could use an occasional spurrious clock read to keep the counters up to date relative to the millis timer.
+
+One of the natural draw backs of using this library over a hardware clock is that it does not permit operation of the clock between power-outages which effect the micorocontroller. Smooth transfer of power from USB to Battery is necessary to prevent resetting of the clock, which must be set via user input or in code when the MCU powers on. Note also that a reset from serial reconnect due to plugging in the USB, or re opening the Serial monitor, will also reset the clock.
