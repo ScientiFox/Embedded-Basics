@@ -9,7 +9,7 @@ Currently Includes:
 - **LEDStrip**: A library for managing indexing and color mixing on a standard SPI type LED strip easy- used in several games elsewhere
 - **Ping**: A small one to handle measurements and data conversions from the timed ultrasonic sensors
 - **QTR**: Another small one for reading values from QTR infrared distance sensors, which use capacitor discharge time as the measure
-- **Serial Screen Controller**: A two part setup that has firmware for one MCU to control a 16x2 LCD screen, and another to issue commands over a serial connection, freeing up one MCU to do other tasks
+- **Serial Screen Controller**: A two part setup that has firmware for one MCU to control an LCD screen, and another to issue commands over a serial connection, freeing up one MCU to do other tasks
 - **Servo360**: A library to manage 360 degree rotation and other servos easily, including soem support for tracking position, setting speeds, and assigning left and right side wheel motors
 - **Sharp**: A tiny little library for interacting with Sharp brand IR distance sensors, mostly existing to implement an empirically measured and vetted voltage to distance conversion
 - **speakerSimple**: A library for interacting with and controlling a small speaker module, and playign songs. The module used a passive wave shaping circuit to make the output square waves more sine-like for better quality and note production
