@@ -1,0 +1,30 @@
+#######################################
+# Syntax Coloring Map For Clock #######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Clock 	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+getHour KEYWORD2
+getMinute KEYWORD2
+getSecond KEYWORD2
+getAMPM KEYWORD2
+setTime KEYWORD2
+getTimeString KEYWORD2
+AM KEYWORD2
+PM KEYWORD2
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+
+#######################################
+# Constants (LITERAL1)
+#######################################

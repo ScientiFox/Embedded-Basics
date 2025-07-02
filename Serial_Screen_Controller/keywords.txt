@@ -1,0 +1,27 @@
+#######################################
+# Syntax Serial_Screen_Controller
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+draw_circle		KEYWORD2
+draw_rect			KEYWORD2
+draw_rect_fill		KEYWORD2
+draw_circle_fill	KEYWORD2
+draw_string		KEYWORD2
+draw_graph			KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+TOP_LEFT			KEYWORD2
+BOTTOM_LEFT		KEYWORD2
+TOP_RIGHT			KEYWORD2
+BOTTOM_RIGHT		KEYWORD2
+VERTICAL			KEYWORD2
+HORIZONTAL			KEYWORD2
