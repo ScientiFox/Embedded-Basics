@@ -11,8 +11,11 @@ Where each position along  the 0-300 axis indicates a certain proportion of Red,
 This means that there are a set of bounded functions which calculate the components of RGB color as proportions of full-scale brightness:
 
   int region = (0<=color)*(color<100) + 2*(100<=color)*(color<200) + 4*(200<=color)*(color<300);
+
   color_out [0] = (color)*((region&1)>0) + (200 - color)*((region&2)>0);
+  
   color_out [1] = (color-100)*((region&2)>0) + (300 - color)*((region&4)>0);
+  
   color_out [2] = (100-color)*((region&1)>0) + (color-200)*((region&4)>0);
 
 The first function calaculates 'region', which indicates whether the input (0-300) is in the 1st, 2nd, or 3rd division of 100. This makes calculating the value of the functions simpler by not requiring any if statements to handle the piecewise components of the functions.
