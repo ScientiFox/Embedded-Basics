@@ -12,26 +12,50 @@ Valid directions are VERTICAL and HORIZONTAL
 
 The functions supplied to send commands are outlined below:
 
+```
 void draw_rect(int h, int w, int crn, int dir);
-	Draw a rectangle of height 'h' and width 'w'.
+```
 
+Draw a rectangle of height 'h' and width 'w'.
+
+```
 void draw_rect_fill(int h, int w, int crn, int dir);
-	Draw a filled rectangle of height 'h' and width 'w'.
+```
 
+Draw a filled rectangle of height 'h' and width 'w'.
+
+```
 void draw_circle(int r, int crn, int dir);
-	Draw a circle of radius 'r'.
+```
 
+Draw a circle of radius 'r'.
+
+```
 void draw_circle_fill(int r, int crn, int dir);
-	Draw a filled circle of radius 'r'.
+```
 
+Draw a filled circle of radius 'r'.
+
+```
 void draw_string(String str, int len, int crn, int dir);
-	Draw a string 'str'. You must supply the length of the string as 'len'.
+```
 
+Draw a string 'str'. You must supply the length of the string as 'len'.
+
+```
 void draw_graph(int data[], int len, int h, int M, int crn, int dir);
-	Draw a graph of height 'h' from the values in 'data'. You must also supply the length of 	the array 'data' as len, and the maximum value for the top of the graph as 'M' for 	scaling.
+```
 
+Draw a graph of height 'h' from the values in 'data'. You must also supply the length of 	the array 'data' as len, and the maximum value for the top of the graph as 'M' for 	scaling.
+
+```
 void clr();
-	Tell the controller to clear the screen.
+```
 
+Tell the controller to clear the screen.
+
+```
 void draw();
-	Display all the things that have been drawn to the screen since the last clr().
+```
+
+Display all the things that have been drawn to the screen since the last clr().
