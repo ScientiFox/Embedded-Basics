@@ -3,7 +3,9 @@
 The LEDStrip library is a derivation of the Adafruit APA102 driver library, with most of the mechanisms put in place to handle multiple processors and other configurations stripped out. Additionally, there is a collection of new functions which revolve around converting the color argument to be a 1-dimensional value.
 
 The color values are computed from a mixing function as illustrated below:
+
 ![image](https://github.com/user-attachments/assets/c1bcdf3b-2d5e-4806-9bf7-5f3c5ea08de5)
+
 Where each position along  the 0-300 axis indicates a certain proportion of Red, Green, and Blue component color. This mapping of course reduces the total span of color space available, but is convenient for general purpose 1D math and the like.
 
 This means that there are a set of bounded functions which calculate the components of RGB color as proportions of full-scale brightness:
